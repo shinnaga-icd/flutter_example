@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4BA387729BB20F400530E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387629BB20F400530E1F /* AppDelegate.swift */; };
+		A4BA387929BB20F400530E1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387829BB20F400530E1F /* SceneDelegate.swift */; };
+		A4BA387B29BB20F400530E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387A29BB20F400530E1F /* ViewController.swift */; };
+		A4BA387E29BB20F400530E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BA387C29BB20F400530E1F /* Main.storyboard */; };
+		A4BA388029BB20F700530E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BA387F29BB20F700530E1F /* Assets.xcassets */; };
+		A4BA388329BB20F700530E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BA388129BB20F700530E1F /* LaunchScreen.storyboard */; };
+		A4BA389329BB225300530E1F /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388C29BB224D00530E1F /* App.xcframework */; };
+		A4BA389429BB225300530E1F /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388C29BB224D00530E1F /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4BA389629BB225600530E1F /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388B29BB224D00530E1F /* Flutter.xcframework */; };
+		A4BA389729BB225600530E1F /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388B29BB224D00530E1F /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4BA389829BB225700530E1F /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */; };
+		A4BA389929BB225700530E1F /* FlutterPluginRegistrant.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4BA389A29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */; };
+		A4BA389B29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4BA389D29BB240F00530E1F /* param_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA389C29BB240F00530E1F /* param_api.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4BA389529BB225300530E1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4BA389B29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
+				A4BA389729BB225600530E1F /* Flutter.xcframework in Embed Frameworks */,
+				A4BA389929BB225700530E1F /* FlutterPluginRegistrant.xcframework in Embed Frameworks */,
+				A4BA389429BB225300530E1F /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4BA387329BB20F400530E1F /* pigeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pigeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BA387629BB20F400530E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4BA387829BB20F400530E1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4BA387A29BB20F400530E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4BA387D29BB20F400530E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4BA387F29BB20F700530E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4BA388229BB20F700530E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4BA388429BB20F700530E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4BA388B29BB224D00530E1F /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = "<group>"; };
+		A4BA388C29BB224D00530E1F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = "<group>"; };
+		A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = Flutter/Release/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter_wkwebview.xcframework; path = Flutter/Release/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
+		A4BA389C29BB240F00530E1F /* param_api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = param_api.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4BA387029BB20F400530E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BA389A29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Frameworks */,
+				A4BA389629BB225600530E1F /* Flutter.xcframework in Frameworks */,
+				A4BA389829BB225700530E1F /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				A4BA389329BB225300530E1F /* App.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4BA386A29BB20F400530E1F = {
+			isa = PBXGroup;
+			children = (
+				A4BA387529BB20F400530E1F /* pigeon */,
+				A4BA387429BB20F400530E1F /* Products */,
+				A4BA388A29BB224D00530E1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4BA387429BB20F400530E1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA387329BB20F400530E1F /* pigeon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4BA387529BB20F400530E1F /* pigeon */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA387629BB20F400530E1F /* AppDelegate.swift */,
+				A4BA387829BB20F400530E1F /* SceneDelegate.swift */,
+				A4BA387A29BB20F400530E1F /* ViewController.swift */,
+				A4BA389C29BB240F00530E1F /* param_api.swift */,
+				A4BA387C29BB20F400530E1F /* Main.storyboard */,
+				A4BA387F29BB20F700530E1F /* Assets.xcassets */,
+				A4BA388129BB20F700530E1F /* LaunchScreen.storyboard */,
+				A4BA388429BB20F700530E1F /* Info.plist */,
+			);
+			path = pigeon;
+			sourceTree = "<group>";
+		};
+		A4BA388A29BB224D00530E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA388C29BB224D00530E1F /* App.xcframework */,
+				A4BA388B29BB224D00530E1F /* Flutter.xcframework */,
+				A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */,
+				A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4BA387229BB20F400530E1F /* pigeon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4BA388729BB20F700530E1F /* Build configuration list for PBXNativeTarget "pigeon" */;
+			buildPhases = (
+				A4BA386F29BB20F400530E1F /* Sources */,
+				A4BA387029BB20F400530E1F /* Frameworks */,
+				A4BA387129BB20F400530E1F /* Resources */,
+				A4BA389529BB225300530E1F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pigeon;
+			productName = pigeon;
+			productReference = A4BA387329BB20F400530E1F /* pigeon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4BA386B29BB20F400530E1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A4BA387229BB20F400530E1F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A4BA386E29BB20F400530E1F /* Build configuration list for PBXProject "pigeon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4BA386A29BB20F400530E1F;
+			productRefGroup = A4BA387429BB20F400530E1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4BA387229BB20F400530E1F /* pigeon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4BA387129BB20F400530E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BA388329BB20F700530E1F /* LaunchScreen.storyboard in Resources */,
+				A4BA388029BB20F700530E1F /* Assets.xcassets in Resources */,
+				A4BA387E29BB20F400530E1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4BA386F29BB20F400530E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BA389D29BB240F00530E1F /* param_api.swift in Sources */,
+				A4BA387B29BB20F400530E1F /* ViewController.swift in Sources */,
+				A4BA387729BB20F400530E1F /* AppDelegate.swift in Sources */,
+				A4BA387929BB20F400530E1F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4BA387C29BB20F400530E1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4BA387D29BB20F400530E1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4BA388129BB20F700530E1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4BA388229BB20F700530E1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4BA388529BB20F700530E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4BA388629BB20F700530E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4BA388829BB20F700530E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22HC7S4W8G;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pigeon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinnaga.pigeon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4BA388929BB20F700530E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22HC7S4W8G;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pigeon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinnaga.pigeon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4BA386E29BB20F400530E1F /* Build configuration list for PBXProject "pigeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4BA388529BB20F700530E1F /* Debug */,
+				A4BA388629BB20F700530E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4BA388729BB20F700530E1F /* Build configuration list for PBXNativeTarget "pigeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4BA388829BB20F700530E1F /* Debug */,
+				A4BA388929BB20F700530E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4BA386B29BB20F400530E1F /* Project object */;
+}
