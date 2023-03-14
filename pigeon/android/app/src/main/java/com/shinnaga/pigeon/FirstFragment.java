@@ -11,6 +11,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.shinnaga.pigeon.databinding.FragmentFirstBinding;
 
+import io.flutter.embedding.android.FlutterActivity;
+
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
@@ -32,6 +34,9 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(
+                        FlutterActivity.createDefaultIntent(view.getContext())
+                );
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
