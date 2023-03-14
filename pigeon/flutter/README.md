@@ -1,17 +1,11 @@
-## pigeon command
+# pigeon_exam
 
-```
-fvm flutter pub run pigeon \
-  --input lib/pigeon/param_model.dart \
-  --dart_out lib/pigeon/param_api.dart \
-  --experimental_swift_out ../ios/pigeon/param_api.swift
-  --
-```
+A new Flutter module project.
 
-## build command
+## Getting Started
 
-```
-fvm flutter build ios-framework --no-profile --output=../ios/Flutter/
-```
-※Release/App.xcframework内の「isolate_snapshot_data」「kernel_blob.bin」「vm_snapshot_data」をDebugから補充すること
+For help getting started with Flutter development, view the online
+[documentation](https://flutter.dev/).
 
+For instructions integrating Flutter modules to your existing applications,
+see the [add-to-app documentation](https://flutter.dev/docs/development/add-to-app).
