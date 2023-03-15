@@ -2,9 +2,9 @@ import 'package:pigeon/pigeon.dart';
 
 @ConfigurePigeon(PigeonOptions(
   dartOut: "lib/pigeon/param_api.dart",
-  swiftOut: "build/pigeon/ParamApi.swift",
-  javaOut: "build/pigeon/ParamApi.java",
-  javaOptions: JavaOptions(package: "com.example.pigeon"),
+  swiftOut: "../ios_UIKit/pigeon/ParamApi.swift",
+  javaOut: "../android/app/src/main/java/com/shinnaga/pigeon/ParamApi.java",
+  javaOptions: JavaOptions(package: "com.shinnaga.pigeon"),
 ))
 class Param {
   String? a;
