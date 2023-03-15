@@ -13,6 +13,8 @@ import com.shinnaga.pigeon.databinding.FragmentFirstBinding;
 
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.FlutterEngineCache;
+import io.flutter.embedding.engine.dart.DartExecutor;
 
 import com.shinnaga.pigeon.*;
 
@@ -37,9 +39,26 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FlutterEngine flutterEngine = new FlutterEngine(view.getContext());
+                String engineID = "param_engine";
+
+                flutterEngine.getDartExecutor().executeDartEntrypoint(
+                        DartExecutor.DartEntrypoint.createDefault()
+                );
+
+                FlutterEngineCache.getInstance()
+                                .put(engineID, flutterEngine);
+
+                ParamApi.Param param = new ParamApi.Param.Builder()
+                        .setA("test-java")
+                        .setB(100L)
+                        .build();
+
+                ParamApi.FlutterParamApi api = new ParamApi.FlutterParamApi(flutterEngine.getDartExecutor().getBinaryMessenger());
+                api.setParams(param, unused -> {});
+
                 startActivity(
-                        // TODO　paramを渡せない…
-                        FlutterParamApi.createDefaultIntent(view.getContext())
+                        FlutterActivity.withCachedEngine(engineID).build(view.getContext())
                 );
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
