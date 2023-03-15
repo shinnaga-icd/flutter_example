@@ -12,6 +12,9 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.shinnaga.pigeon.databinding.FragmentFirstBinding;
 
 import io.flutter.embedding.android.FlutterActivity;
+import io.flutter.embedding.engine.FlutterEngine;
+
+import com.shinnaga.pigeon.*;
 
 public class FirstFragment extends Fragment {
 
@@ -35,7 +38,8 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(
-                        FlutterActivity.createDefaultIntent(view.getContext())
+                        // TODO　paramを渡せない…
+                        FlutterParamApi.createDefaultIntent(view.getContext())
                 );
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
