@@ -1,5 +1,6 @@
 package com.shinnaga.pigeon
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
+import android.util.Base64
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -50,9 +52,15 @@ class FirstFragment : Fragment() {
                 .getInstance()
                 .put(engineID, flutterEngine)
 
+            val inputStream = context?.resources?.openRawResource(R.drawable.usa)
+            val bytes = inputStream?.readBytes()
+            val encoded = Base64.encodeToString(bytes, Base64.NO_WRAP)
+
             val param = Param.Builder()
-                .setA("test-kotlin")
-                .setB(100L)
+                .setStr("test-kotlin")
+                .setNum(100L)
+                .setColor(ParamApi.ParamColor.Builder().setA(50).setR(0).setG(130).setB(220).build())
+                .setImage(encoded)
                 .build()
 
             ParamApi.FlutterParamApi(flutterEngine.dartExecutor.binaryMessenger).setParams(param) {
