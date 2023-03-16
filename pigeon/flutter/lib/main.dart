@@ -88,7 +88,8 @@ class _MyAppState extends State<MyApp> {
               width: 50,
             ),
             const SizedBox(height: 10),
-            Text('input Image ${paramI.substring(0, 100)}'),
+            Text(
+                'input Image ${paramI.length <= 100 ? paramI : paramI.substring(0, 100)}'),
             FutureBuilder(
                 future: getImageData(),
                 builder: (context, snapshot) {
