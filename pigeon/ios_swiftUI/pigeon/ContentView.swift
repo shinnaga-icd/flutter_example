@@ -23,7 +23,17 @@ struct ContentView: View {
     func showFlutter() {
         let api: FlutterParamApi!
         api = FlutterParamApi.init(binaryMessenger: flutterDependencies.flutterEngine.binaryMessenger)
-        api.setParams(param: Param(a: "success!!", b: 100), completion: {})
+        
+        let paramColor = ParamColor(a: 10, r: 230, g: 0, b: 60)
+        
+        var base64String: String = ""
+        if let image = UIImage(named: "usa") {
+            if let imageData = image.pngData() {
+                base64String = imageData.base64EncodedString()
+            }
+        }
+        
+        api.setParams(param: Param(str: "success!!", num: 100, color: paramColor, image: base64String), completion: {})
 
         // Get the RootViewController.
         guard

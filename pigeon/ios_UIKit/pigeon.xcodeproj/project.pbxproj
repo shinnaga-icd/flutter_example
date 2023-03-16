@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A45F4D2729C35FCB0047CCA0 /* ParamApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F4D2629C35FCB0047CCA0 /* ParamApi.swift */; };
+		A45F4D3029C360960047CCA0 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2B29C3608D0047CCA0 /* App.xcframework */; };
+		A45F4D3129C360960047CCA0 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2B29C3608D0047CCA0 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A45F4D3229C360970047CCA0 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2829C3608D0047CCA0 /* Flutter.xcframework */; };
+		A45F4D3329C360970047CCA0 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2829C3608D0047CCA0 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A45F4D3429C360990047CCA0 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2A29C3608D0047CCA0 /* FlutterPluginRegistrant.xcframework */; };
+		A45F4D3529C360990047CCA0 /* FlutterPluginRegistrant.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2A29C3608D0047CCA0 /* FlutterPluginRegistrant.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A45F4D3629C3609A0047CCA0 /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2929C3608D0047CCA0 /* webview_flutter_wkwebview.xcframework */; };
+		A45F4D3729C3609A0047CCA0 /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A45F4D2929C3608D0047CCA0 /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4BA387729BB20F400530E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387629BB20F400530E1F /* AppDelegate.swift */; };
 		A4BA387929BB20F400530E1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387829BB20F400530E1F /* SceneDelegate.swift */; };
 		A4BA387B29BB20F400530E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA387A29BB20F400530E1F /* ViewController.swift */; };
 		A4BA387E29BB20F400530E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BA387C29BB20F400530E1F /* Main.storyboard */; };
 		A4BA388029BB20F700530E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BA387F29BB20F700530E1F /* Assets.xcassets */; };
 		A4BA388329BB20F700530E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BA388129BB20F700530E1F /* LaunchScreen.storyboard */; };
-		A4BA389329BB225300530E1F /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388C29BB224D00530E1F /* App.xcframework */; };
-		A4BA389429BB225300530E1F /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388C29BB224D00530E1F /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BA389629BB225600530E1F /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388B29BB224D00530E1F /* Flutter.xcframework */; };
-		A4BA389729BB225600530E1F /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388B29BB224D00530E1F /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BA389829BB225700530E1F /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */; };
-		A4BA389929BB225700530E1F /* FlutterPluginRegistrant.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BA389A29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */; };
-		A4BA389B29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BA389D29BB240F00530E1F /* param_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA389C29BB240F00530E1F /* param_api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,10 +31,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4BA389B29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
-				A4BA389729BB225600530E1F /* Flutter.xcframework in Embed Frameworks */,
-				A4BA389929BB225700530E1F /* FlutterPluginRegistrant.xcframework in Embed Frameworks */,
-				A4BA389429BB225300530E1F /* App.xcframework in Embed Frameworks */,
+				A45F4D3729C3609A0047CCA0 /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
+				A45F4D3329C360970047CCA0 /* Flutter.xcframework in Embed Frameworks */,
+				A45F4D3529C360990047CCA0 /* FlutterPluginRegistrant.xcframework in Embed Frameworks */,
+				A45F4D3129C360960047CCA0 /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +42,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A45F4D2629C35FCB0047CCA0 /* ParamApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParamApi.swift; path = ../../ios_swiftUI/pigeon/ParamApi.swift; sourceTree = "<group>"; };
+		A45F4D2829C3608D0047CCA0 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../flutter/build/ios/framework/Debug/Flutter.xcframework; sourceTree = "<group>"; };
+		A45F4D2929C3608D0047CCA0 /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter_wkwebview.xcframework; path = ../flutter/build/ios/framework/Debug/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
+		A45F4D2A29C3608D0047CCA0 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = ../flutter/build/ios/framework/Debug/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		A45F4D2B29C3608D0047CCA0 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = ../flutter/build/ios/framework/Debug/App.xcframework; sourceTree = "<group>"; };
 		A4BA387329BB20F400530E1F /* pigeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pigeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BA387629BB20F400530E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4BA387829BB20F400530E1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		A4BA388C29BB224D00530E1F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = "<group>"; };
 		A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = Flutter/Release/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
 		A4BA388E29BB224D00530E1F /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter_wkwebview.xcframework; path = Flutter/Release/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
-		A4BA389C29BB240F00530E1F /* param_api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = param_api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BA389A29BB225900530E1F /* webview_flutter_wkwebview.xcframework in Frameworks */,
-				A4BA389629BB225600530E1F /* Flutter.xcframework in Frameworks */,
-				A4BA389829BB225700530E1F /* FlutterPluginRegistrant.xcframework in Frameworks */,
-				A4BA389329BB225300530E1F /* App.xcframework in Frameworks */,
+				A45F4D3629C3609A0047CCA0 /* webview_flutter_wkwebview.xcframework in Frameworks */,
+				A45F4D3229C360970047CCA0 /* Flutter.xcframework in Frameworks */,
+				A45F4D3429C360990047CCA0 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				A45F4D3029C360960047CCA0 /* App.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,7 @@
 				A4BA387629BB20F400530E1F /* AppDelegate.swift */,
 				A4BA387829BB20F400530E1F /* SceneDelegate.swift */,
 				A4BA387A29BB20F400530E1F /* ViewController.swift */,
-				A4BA389C29BB240F00530E1F /* param_api.swift */,
+				A45F4D2629C35FCB0047CCA0 /* ParamApi.swift */,
 				A4BA387C29BB20F400530E1F /* Main.storyboard */,
 				A4BA387F29BB20F700530E1F /* Assets.xcassets */,
 				A4BA388129BB20F700530E1F /* LaunchScreen.storyboard */,
@@ -107,6 +111,10 @@
 		A4BA388A29BB224D00530E1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A45F4D2B29C3608D0047CCA0 /* App.xcframework */,
+				A45F4D2829C3608D0047CCA0 /* Flutter.xcframework */,
+				A45F4D2A29C3608D0047CCA0 /* FlutterPluginRegistrant.xcframework */,
+				A45F4D2929C3608D0047CCA0 /* webview_flutter_wkwebview.xcframework */,
 				A4BA388C29BB224D00530E1F /* App.xcframework */,
 				A4BA388B29BB224D00530E1F /* Flutter.xcframework */,
 				A4BA388D29BB224D00530E1F /* FlutterPluginRegistrant.xcframework */,
@@ -187,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BA389D29BB240F00530E1F /* param_api.swift in Sources */,
+				A45F4D2729C35FCB0047CCA0 /* ParamApi.swift in Sources */,
 				A4BA387B29BB20F400530E1F /* ViewController.swift in Sources */,
 				A4BA387729BB20F400530E1F /* AppDelegate.swift in Sources */,
 				A4BA387929BB20F400530E1F /* SceneDelegate.swift in Sources */,
@@ -338,7 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22HC7S4W8G;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../flutter/build/ios/framework/$(CONFIGURATION)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pigeon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -367,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22HC7S4W8G;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/$(CONFIGURATION)";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../flutter/build/ios/framework/$(CONFIGURATION)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = pigeon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

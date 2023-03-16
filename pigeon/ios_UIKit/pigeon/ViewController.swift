@@ -28,7 +28,17 @@ class ViewController: UIViewController {
 
     let api: FlutterParamApi!
     api = FlutterParamApi.init(binaryMessenger: flutterEngine.binaryMessenger)
-    api.setParams(param: Param(a: "success", b: 100), completion: {print("completion")})
+
+    let paramColor = ParamColor(a: 230, r: 0, g: 200, b: 160)
+
+    var base64String: String = ""
+    if let image = UIImage(named: "usa") {
+      if let imageData = image.pngData() {
+          base64String = imageData.base64EncodedString()
+      }
+    }
+  
+    api.setParams(param: Param(str: "success", num: 100, color: paramColor, image: base64String), completion: {})
 
     present(flutterViewController, animated: true, completion: nil)
   }
