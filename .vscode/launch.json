@@ -8,29 +8,22 @@
             "name": "envied",
             "cwd": "envied",
             "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "envied (release mode)",
-            "cwd": "envied",
-            "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "args": ["--use-application-binary=./build/host/outputs/apk/debug/app-debug.apk"]
         },
         {
             "name": "pigeon",
             "cwd": "pigeon/flutter",
             "request": "launch",
             "type": "dart",
-            "args": ["--use-application-binary=build/host/outputs/apk/debug/app-debug.apk"]
+            "args": ["--use-application-binary=./build/host/outputs/apk/debug/app-debug.apk"]
         },
         {
-            "name": "pigeon (release mode)",
-            "cwd": "pigeon/flutter",
+            "name": "rive",
+            "cwd": "rive",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release",
-            "args": ["--use-application-binary=build/host/outputs/apk/release/app-debug.apk"]
+            "args": ["--use-application-binary=./build/app/outputs/apk/debug/app-debug.apk"]
         }
     ]
 }
