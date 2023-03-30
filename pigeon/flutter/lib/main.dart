@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pigeon_exam/common/custom_theme.dart';
 import 'package:pigeon_exam/pigeon/param_api.dart';
 
 void main() => runApp(const MyApp());
@@ -32,6 +33,7 @@ class _MyAppState extends State<MyApp> {
   ParamColor paramC = ParamColor(a: 0, r: 0, g: 0, b: 0);
   String paramI = '';
   Color inputColor = Colors.black;
+  List<String> paramL = [];
 
   Future<String> getImageData() async {
     if (paramI.isNotEmpty) return paramI;
@@ -54,6 +56,12 @@ class _MyAppState extends State<MyApp> {
             paramI = param.image ?? '';
             inputColor =
                 Color.fromARGB(paramC.a!, paramC.r!, paramC.g!, paramC.b!);
+            CustomTheme.setParam(param);
+            if (param.listStr != null) {
+              for (var str in param.listStr!) {
+                paramL.add(str ?? 'null');
+              }
+            }
           });
         },
       ),
@@ -65,47 +73,62 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
+        // primaryColor: Colors.amber,
       ),
       home: Scaffold(
+          appBar: AppBar(
+            title: const Text('pigeon test'),
+          ),
           body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              paramA,
-              style: const TextStyle(fontSize: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  paramA,
+                  style: const TextStyle(fontSize: 20),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  paramB.toString(),
+                  style: const TextStyle(fontSize: 20),
+                ),
+                const SizedBox(height: 10),
+                Container(
+                  decoration: BoxDecoration(
+                    color: CustomTheme.customPrimarySwatch,
+                  ),
+                  height: 50,
+                  width: 50,
+                ),
+                Container(
+                  decoration: BoxDecoration(color: inputColor),
+                  height: 50,
+                  width: 50,
+                ),
+                const SizedBox(height: 10),
+                Text(paramL.isNotEmpty ? paramL.join('_') : 'empty'),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                    'input Image ${paramI.length <= 100 ? paramI : paramI.substring(0, 100)}'),
+                FutureBuilder(
+                    future: getImageData(),
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const CircularProgressIndicator();
+                      }
+                      return Image.memory(
+                        const Base64Decoder().convert(snapshot.data as String),
+                        fit: BoxFit.cover,
+                        height: 120,
+                        width: 120,
+                      );
+                    }),
+              ],
             ),
-            const SizedBox(height: 10),
-            Text(
-              paramB.toString(),
-              style: const TextStyle(fontSize: 20),
-            ),
-            const SizedBox(height: 10),
-            Container(
-              decoration: BoxDecoration(color: inputColor),
-              height: 50,
-              width: 50,
-            ),
-            const SizedBox(height: 10),
-            Text(
-                'input Image ${paramI.length <= 100 ? paramI : paramI.substring(0, 100)}'),
-            FutureBuilder(
-                future: getImageData(),
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const CircularProgressIndicator();
-                  }
-                  return Image.memory(
-                    const Base64Decoder().convert(snapshot.data as String),
-                    fit: BoxFit.cover,
-                    height: 120,
-                    width: 120,
-                  );
-                }),
-          ],
-        ),
-      )),
+          )),
     );
   }
 }

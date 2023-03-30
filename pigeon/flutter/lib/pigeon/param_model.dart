@@ -12,6 +12,7 @@ class Param {
   int? num;
   ParamColor? color;
   String? image;
+  List<String?>? listStr;
 }
 
 class ParamColor {
