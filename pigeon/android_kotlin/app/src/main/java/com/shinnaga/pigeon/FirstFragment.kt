@@ -58,9 +58,10 @@ class FirstFragment : Fragment() {
 
             val param = Param.Builder()
                 .setStr("test-kotlin")
-                .setNum(100L)
+                .setNum(0xFF000000)
                 .setColor(ParamApi.ParamColor.Builder().setA(50).setR(0).setG(130).setB(220).build())
                 .setImage(encoded)
+                .setListStr(listOf(encoded, encoded, encoded, encoded, encoded, encoded, encoded, encoded, encoded, encoded, encoded, encoded))
                 .build()
 
             ParamApi.FlutterParamApi(flutterEngine.dartExecutor.binaryMessenger).setParams(param) {

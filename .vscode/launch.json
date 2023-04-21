@@ -16,7 +16,7 @@
             "cwd": "pigeon/flutter",
             "request": "launch",
             "type": "dart",
-            // "args": ["--use-application-binary=./build/host/outputs/apk/debug/app-debug.apk"]
+            "args": ["--use-application-binary=./build/host/outputs/apk/debug/app-debug.apk"]
         },
         {
             "name": "rive",
