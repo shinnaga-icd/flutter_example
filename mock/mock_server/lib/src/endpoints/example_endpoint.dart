@@ -1,3 +1,4 @@
+import 'package:mock_server/src/generated/protocol.dart';
 import 'package:serverpod/serverpod.dart';
 
 // This is an example endpoint of your server. It's best practice to use the
@@ -17,5 +18,14 @@ class ExampleEndpoint extends Endpoint {
   // passwords, and information about the request being made to the server.
   Future<String> hello(Session session, String name) async {
     return 'Hello $name';
+  }
+
+  Future<Article> getArticle(Session session, int id) async {
+    return Article(
+      title: 'Flutter with Serverpod',
+      content: 'This is test project',
+      publishedOn: DateTime.now(),
+      isPrime: true,
+    );
   }
 }
