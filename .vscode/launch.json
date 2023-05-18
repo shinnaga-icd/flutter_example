@@ -25,5 +25,11 @@
             "type": "dart",
             // "args": ["--use-application-binary=./build/app/outputs/apk/debug/app-debug.apk"]
         }
+        {
+            "name": "mock",
+            "cwd": "mock/mock_flutter",
+            "request": "launch",
+            "type": "dart",
+        }
     ]
 }
