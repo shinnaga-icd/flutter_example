@@ -1,26 +1,18 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-late FragmentProgram fragmentProgram;
+class ShaderScreen extends StatelessWidget {
+  ShaderScreen({super.key, required FragmentProgram});
 
-void main() async {
-  fragmentProgram = await FragmentProgram.fromAsset(
-    'assets/shaders/myshader.frag',
-  );
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  FragmentProgram? fragmentProgram;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: CustomPaint(
+    return Scaffold(
+      body: CustomPaint(
         painter: MyPainter(
           const Color.fromARGB(64, 0, 255, 0),
-          shader: fragmentProgram.fragmentShader(),
+          shader: fragmentProgram!.fragmentShader(),
         ),
       ),
     );
