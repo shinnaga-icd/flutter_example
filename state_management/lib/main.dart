@@ -46,6 +46,17 @@ class Home extends StatelessWidget {
               },
               child: const Text('Bloc'),
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProviderScreen()),
+                );
+              },
+              child: const Text('Provider'),
+            ),
           ],
         ),
       ),

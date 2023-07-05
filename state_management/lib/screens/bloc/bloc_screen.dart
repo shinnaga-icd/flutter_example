@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets.dart';
 
 class BlocScreen extends StatelessWidget {
   const BlocScreen({super.key});
@@ -11,6 +12,10 @@ class BlocScreen extends StatelessWidget {
       ),
       body: const Center(
         child: Text('page B'),
+      ),
+      floatingActionButton: AddDelButton(
+        () {},
+        () {},
       ),
     );
   }
