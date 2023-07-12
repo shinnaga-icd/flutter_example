@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "inputs": [
+        {
+            "id": "environment",
+            "type": "pickString",
+            "default": "dev",
+            "options": ["dev", "prod"],
+            "description": "The environment to run the app in"
+        }
+    ],
+    "configurations": [
+        {
+            "name": "animate",
+            "cwd": "animate",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "api",
+            "cwd": "api",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "envied",
+            "cwd": "envied",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "program": "lib/main_${input:environment}.dart",
+            "name": "feature_test",
+            "cwd": "feature_test",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "screen_capture",
+            "cwd": "screen_capture",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "state_management",
+            "cwd": "state_management",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "mock_client",
+            "cwd": "mock/mock_client",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "mock_flutter",
+            "cwd": "mock/mock_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "mock_server",
+            "cwd": "mock/mock_server",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter",
+            "cwd": "pigeon/flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+    ]
+}
