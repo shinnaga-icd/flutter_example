@@ -64,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
         stream: null,
         builder: (BuildContext context, AsyncSnapshot<int> snapshot) {
           return snapshot.when(
+            empty: () => const TestWidget(),
             data: (data) {
               return const Scaffold(
                 body: Scaffold(
@@ -73,5 +74,35 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           );
         });
+  }
+}
+
+final _items = <String, Widget>{
+  'item1': const Text('item A'),
+  'item2': const Text('item B'),
+  'item3': const Text('item C'),
+};
+
+class TestWidget extends StatelessWidget {
+  const TestWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter 2nd Home Page'),
+      ),
+      body: Center(
+        child: DropdownButton<String>(
+          items: _items.entries
+              .map((e) => DropdownMenuItem<String>(
+                    value: e.key,
+                    child: e.value,
+                  ))
+              .toList(),
+          onChanged: (value) {},
+        ),
+      ),
+    );
   }
 }
