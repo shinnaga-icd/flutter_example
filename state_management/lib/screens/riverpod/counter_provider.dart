@@ -1,12 +1,17 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-final counterProvider = StateNotifierProvider<Counter, int>((ref) {
-  return Counter();
-});
+part 'counter_provider.g.dart';
 
-class Counter extends StateNotifier<int> {
-  Counter() : super(0);
+@riverpod
+class Counter extends _$Counter {
+
+  @override
+  int build() {
+    return 0;
+  }
 
   void increment() => state++;
   void decrement() => state--;
+
+  void kakeru2() => state = state * 2;
 }
