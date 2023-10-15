@@ -1,3 +1,4 @@
+import 'package:dialog/second.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -28,9 +29,9 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    // WidgetsBinding.instance.addPostFrameCallback((_) async {
-    //   showAnnouncementDialog();
-    // });
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      showAnnouncementDialog();
+    });
 
     return Scaffold(
         appBar: AppBar(
@@ -50,7 +51,13 @@ class _HomeState extends State<Home> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            showAnnouncementDialog();
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) {
+                  return const SecondPage();
+                },
+              ),
+            );
           },
           child: const Icon(Icons.polymer_sharp),
         ));
